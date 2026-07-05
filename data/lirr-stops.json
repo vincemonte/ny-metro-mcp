@@ -1,0 +1,510 @@
+[
+  {
+    "id": "1",
+    "name": "Albertson"
+  },
+  {
+    "id": "4",
+    "name": "Amagansett"
+  },
+  {
+    "id": "8",
+    "name": "Amityville"
+  },
+  {
+    "id": "241",
+    "name": "Atlantic Terminal"
+  },
+  {
+    "id": "2",
+    "name": "Auburndale"
+  },
+  {
+    "id": "27",
+    "name": "Babylon"
+  },
+  {
+    "id": "225",
+    "name": "Baldwin"
+  },
+  {
+    "id": "26",
+    "name": "Bay Shore"
+  },
+  {
+    "id": "25",
+    "name": "Bayside"
+  },
+  {
+    "id": "23",
+    "name": "Bellerose"
+  },
+  {
+    "id": "16",
+    "name": "Bellmore"
+  },
+  {
+    "id": "21",
+    "name": "Bellport"
+  },
+  {
+    "id": "24",
+    "name": "Belmont Park"
+  },
+  {
+    "id": "20",
+    "name": "Bethpage"
+  },
+  {
+    "id": "29",
+    "name": "Brentwood"
+  },
+  {
+    "id": "13",
+    "name": "Bridgehampton"
+  },
+  {
+    "id": "11",
+    "name": "Broadway"
+  },
+  {
+    "id": "39",
+    "name": "Carle Place"
+  },
+  {
+    "id": "32",
+    "name": "Cedarhurst"
+  },
+  {
+    "id": "33",
+    "name": "Central Islip"
+  },
+  {
+    "id": "31",
+    "name": "Centre Av"
+  },
+  {
+    "id": "40",
+    "name": "Cold Spring Harbor"
+  },
+  {
+    "id": "38",
+    "name": "Copiague"
+  },
+  {
+    "id": "36",
+    "name": "Country Life Press"
+  },
+  {
+    "id": "44",
+    "name": "Deer Park"
+  },
+  {
+    "id": "42",
+    "name": "Douglaston"
+  },
+  {
+    "id": "48",
+    "name": "East Hampton"
+  },
+  {
+    "id": "50",
+    "name": "East New York"
+  },
+  {
+    "id": "51",
+    "name": "East Rockaway"
+  },
+  {
+    "id": "52",
+    "name": "East Williston"
+  },
+  {
+    "id": "359",
+    "name": "Elmont-UBS Arena"
+  },
+  {
+    "id": "65",
+    "name": "Far Rockaway"
+  },
+  {
+    "id": "59",
+    "name": "Farmingdale"
+  },
+  {
+    "id": "63",
+    "name": "Floral Park"
+  },
+  {
+    "id": "56",
+    "name": "Flushing Main Street"
+  },
+  {
+    "id": "55",
+    "name": "Forest Hills"
+  },
+  {
+    "id": "64",
+    "name": "Freeport"
+  },
+  {
+    "id": "68",
+    "name": "Garden City"
+  },
+  {
+    "id": "66",
+    "name": "Gibson"
+  },
+  {
+    "id": "67",
+    "name": "Glen Cove"
+  },
+  {
+    "id": "71",
+    "name": "Glen Head"
+  },
+  {
+    "id": "76",
+    "name": "Glen Street"
+  },
+  {
+    "id": "349",
+    "name": "Grand Central"
+  },
+  {
+    "id": "72",
+    "name": "Great Neck"
+  },
+  {
+    "id": "74",
+    "name": "Great River"
+  },
+  {
+    "id": "78",
+    "name": "Greenlawn"
+  },
+  {
+    "id": "73",
+    "name": "Greenport"
+  },
+  {
+    "id": "77",
+    "name": "Greenvale"
+  },
+  {
+    "id": "83",
+    "name": "Hampton Bays"
+  },
+  {
+    "id": "84",
+    "name": "Hempstead"
+  },
+  {
+    "id": "85",
+    "name": "Hempstead Gardens"
+  },
+  {
+    "id": "94",
+    "name": "Hewlett"
+  },
+  {
+    "id": "92",
+    "name": "Hicksville"
+  },
+  {
+    "id": "86",
+    "name": "Hillside-Employees"
+  },
+  {
+    "id": "89",
+    "name": "Hollis"
+  },
+  {
+    "id": "90",
+    "name": "Hunterspoint Av"
+  },
+  {
+    "id": "91",
+    "name": "Huntington"
+  },
+  {
+    "id": "101",
+    "name": "Inwood"
+  },
+  {
+    "id": "99",
+    "name": "Island Park"
+  },
+  {
+    "id": "100",
+    "name": "Islip"
+  },
+  {
+    "id": "102",
+    "name": "Jamaica"
+  },
+  {
+    "id": "107",
+    "name": "Kew Gardens"
+  },
+  {
+    "id": "111",
+    "name": "Kings Park"
+  },
+  {
+    "id": "124",
+    "name": "Lakeview"
+  },
+  {
+    "id": "122",
+    "name": "Laurelton"
+  },
+  {
+    "id": "114",
+    "name": "Lawrence"
+  },
+  {
+    "id": "117",
+    "name": "Lindenhurst"
+  },
+  {
+    "id": "120",
+    "name": "Little Neck"
+  },
+  {
+    "id": "119",
+    "name": "Locust Manor"
+  },
+  {
+    "id": "123",
+    "name": "Locust Valley"
+  },
+  {
+    "id": "113",
+    "name": "Long Beach"
+  },
+  {
+    "id": "118",
+    "name": "Long Island City"
+  },
+  {
+    "id": "125",
+    "name": "Lynbrook"
+  },
+  {
+    "id": "142",
+    "name": "Malverne"
+  },
+  {
+    "id": "131",
+    "name": "Manhasset"
+  },
+  {
+    "id": "136",
+    "name": "Massapequa"
+  },
+  {
+    "id": "135",
+    "name": "Massapequa Park"
+  },
+  {
+    "id": "140",
+    "name": "Mastic-Shirley"
+  },
+  {
+    "id": "126",
+    "name": "Mattituck"
+  },
+  {
+    "id": "129",
+    "name": "Medford"
+  },
+  {
+    "id": "127",
+    "name": "Merillon Av"
+  },
+  {
+    "id": "226",
+    "name": "Merrick"
+  },
+  {
+    "id": "199",
+    "name": "Mets-Willets Point"
+  },
+  {
+    "id": "132",
+    "name": "Mineola"
+  },
+  {
+    "id": "141",
+    "name": "Montauk"
+  },
+  {
+    "id": "130",
+    "name": "Murray Hill"
+  },
+  {
+    "id": "149",
+    "name": "Nassau Blvd"
+  },
+  {
+    "id": "152",
+    "name": "New Hyde Park"
+  },
+  {
+    "id": "153",
+    "name": "Northport"
+  },
+  {
+    "id": "148",
+    "name": "Nostrand Av"
+  },
+  {
+    "id": "157",
+    "name": "Oakdale"
+  },
+  {
+    "id": "155",
+    "name": "Oceanside"
+  },
+  {
+    "id": "154",
+    "name": "Oyster Bay"
+  },
+  {
+    "id": "163",
+    "name": "Patchogue"
+  },
+  {
+    "id": "237",
+    "name": "Penn Station"
+  },
+  {
+    "id": "165",
+    "name": "Pinelawn"
+  },
+  {
+    "id": "162",
+    "name": "Plandome"
+  },
+  {
+    "id": "164",
+    "name": "Port Jefferson"
+  },
+  {
+    "id": "171",
+    "name": "Port Washington"
+  },
+  {
+    "id": "175",
+    "name": "Queens Village"
+  },
+  {
+    "id": "176",
+    "name": "Riverhead"
+  },
+  {
+    "id": "183",
+    "name": "Rockville Centre"
+  },
+  {
+    "id": "179",
+    "name": "Ronkonkoma"
+  },
+  {
+    "id": "180",
+    "name": "Rosedale"
+  },
+  {
+    "id": "182",
+    "name": "Roslyn"
+  },
+  {
+    "id": "204",
+    "name": "Sayville"
+  },
+  {
+    "id": "185",
+    "name": "Sea Cliff"
+  },
+  {
+    "id": "187",
+    "name": "Seaford"
+  },
+  {
+    "id": "202",
+    "name": "Smithtown"
+  },
+  {
+    "id": "191",
+    "name": "Southampton"
+  },
+  {
+    "id": "190",
+    "name": "Southold"
+  },
+  {
+    "id": "198",
+    "name": "Speonk"
+  },
+  {
+    "id": "184",
+    "name": "St. Albans"
+  },
+  {
+    "id": "193",
+    "name": "St. James"
+  },
+  {
+    "id": "195",
+    "name": "Stewart Manor"
+  },
+  {
+    "id": "14",
+    "name": "Stony Brook"
+  },
+  {
+    "id": "205",
+    "name": "Syosset"
+  },
+  {
+    "id": "211",
+    "name": "Valley Stream"
+  },
+  {
+    "id": "215",
+    "name": "Wantagh"
+  },
+  {
+    "id": "216",
+    "name": "West Hempstead"
+  },
+  {
+    "id": "213",
+    "name": "Westbury"
+  },
+  {
+    "id": "233",
+    "name": "Westhampton"
+  },
+  {
+    "id": "219",
+    "name": "Westwood"
+  },
+  {
+    "id": "217",
+    "name": "Woodmere"
+  },
+  {
+    "id": "214",
+    "name": "Woodside"
+  },
+  {
+    "id": "220",
+    "name": "Wyandanch"
+  },
+  {
+    "id": "223",
+    "name": "Yaphank"
+  }
+]
