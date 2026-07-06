@@ -9,7 +9,7 @@ import GtfsRealtimeBindings from "gtfs-realtime-bindings";
 const { transit_realtime } = GtfsRealtimeBindings;
 export type FeedMessage = GtfsRealtimeBindings.transit_realtime.FeedMessage;
 
-const BASE = "https://api-endpoints.mta.info/Dataservice/mtagtfsfeeds";
+const BASE = "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds";
 
 /** LIRR trip updates + vehicle positions (single feed). */
 export const LIRR_FEED = `${BASE}/lirr%2Fgtfs-lirr`;
