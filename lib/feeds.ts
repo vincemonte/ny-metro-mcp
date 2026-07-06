@@ -64,18 +64,53 @@ async function cached<T>(key: string, fn: () => Promise<T>): Promise<T> {
   return value;
 }
 
-async function safeFetch(url: string, accept: string): Promise<Response> {
-  let res: Response;
+/** Overall budget stays under Vercel Hobby's hard 10s function cap, leaving
+ * headroom for protobuf decode / JSON parse after the last byte lands. */
+const TOTAL_DEADLINE_MS = 9_000;
+const MAX_ATTEMPTS = 3;
+
+async function attemptFetch(url: string, accept: string, timeoutMs: number): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    res = await fetch(url, { headers: { accept } });
+    return await fetch(url, { headers: { accept }, signal: controller.signal });
   } catch (err) {
+    if (err instanceof Error && err.name === "AbortError") {
+      throw new Error(`timed out after ${timeoutMs}ms`);
+    }
     const cause = err instanceof Error ? (err.cause ?? err.message) : err;
-    throw new Error(`Could not reach MTA feed ${url} (${String(cause)})`);
+    throw new Error(String(cause));
+  } finally {
+    clearTimeout(timer);
   }
-  if (!res.ok) {
-    throw new Error(`MTA feed request failed (${res.status} ${res.statusText}) for ${url}`);
+}
+
+async function safeFetch(url: string, accept: string): Promise<Response> {
+  const deadline = Date.now() + TOTAL_DEADLINE_MS;
+  let lastErr: string = "";
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    const remaining = deadline - Date.now();
+    if (remaining <= 0) break;
+    // Split what's left evenly across remaining attempts so early retries
+    // don't starve later ones.
+    const timeoutMs = Math.floor(remaining / (MAX_ATTEMPTS - attempt + 1));
+
+    let res: Response;
+    try {
+      res = await attemptFetch(url, accept, timeoutMs);
+    } catch (err) {
+      lastErr = err instanceof Error ? err.message : String(err);
+      continue; // network error / timeout: retry
+    }
+
+    if (res.ok) return res;
+    if (res.status >= 400 && res.status < 500) {
+      // Client error won't fix itself on retry.
+      throw new Error(`MTA feed request failed (${res.status} ${res.statusText}) for ${url}`);
+    }
+    lastErr = `${res.status} ${res.statusText}`;
   }
-  return res;
+  throw new Error(`MTA feed unreachable after ${MAX_ATTEMPTS} attempts for ${url} (${lastErr})`);
 }
 
 export async function fetchProtobufFeed(url: string): Promise<FeedMessage> {
